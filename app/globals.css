@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-control {
+    @apply bg-slate-100 px-6 py-5 text-base rounded-lg border-transparent focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:border-none font-semibold text-black placeholder:capitalize placeholder:font-normal;
+  }
+  .breadcrumb {
+    @apply bg-white px-6 py-2.5 border-2 rounded-full border-green-500 space-x-2 text-center hover:bg-green-300 hover:border-transparent flex gap-1 items-center;
+  }
+  .breadcrumb-txt {
+    @apply capitalize text-sm font-medium text-black hover:text-green-800;
+  }
+}
